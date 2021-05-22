@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}
+    <title> Sample Page </title>
+    {% endblock %}
+</head>
+
+<body>
+    {% include "partials/_topbar.html" %}
+    {% include "partials/_navbar.html" %}
+    {% block content %}
+    <h1> Welcome to Sample Page </h1>
+    {% endblock %}
+    {% include "partials/_footer.html" %}
+</body>
+</html>
